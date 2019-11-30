@@ -16,6 +16,7 @@
 /* 版心 */
 .container {
     position: relative;
+    width: 1128px;
+    padding: 0 11px;
     margin: 0 auto;
-    width: 1366px;
 }
