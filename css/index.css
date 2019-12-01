@@ -1,7 +1,7 @@
 /* 顶部导航 */
 .topnav{
     position: relative;
-    z-index: 1;
+    z-index: 100;
     width: 100%;
     height: 28px;
     background-color: #222222;
@@ -103,6 +103,8 @@
 
 /* 导航栏 */
 .searchnav {
+    position: relative;
+    z-index: 50;
     height: 74px;
     background-color: #fff;
     box-shadow: 0px 0px 10px #ccc;
@@ -204,4 +206,220 @@
     width: 25px;
     margin-top: 26px;
     margin-right: 8px;
+}
+/* 轮播图 */
+.carousel {
+    position: relative;
+    width: 1366px;
+    height: 560px;
+    margin: 0 auto;
+}
+
+.carousel li {
+    position: relative;
+    width: 1366px;
+    height: 560px;
+}
+
+.carousel-list a {
+    float: left;
+    display: block;
+    width: 1366px;
+    height: 560px;
+}
+
+.carousel-list_1:after {
+    content: "";
+    width: 431px;
+    height: 181px;
+    position: absolute;
+    top: 110px;
+    right: 180px;
+    background-image: url(../upload/banner_1_5g.png);
+}
+
+.carousel-list .carousel-list-more {
+    position: absolute;
+    display: block;
+    width: 132px;
+    height: 22px;
+    color: #000;
+    font-size: 22px;
+}
+
+.carousel-list .carousel-list-more:after {
+    content: "";
+    position: absolute;
+    top: 1px;
+    right: 0px;
+    display: block;
+    width: 32px;
+    height: 19px;
+    background-image: url(../images/jiantou_right.png);
+}
+
+.carousel-list-more:hover:after {
+    transition: all 0.2s;
+    right: -10px;
+}
+
+.carousel-list_1 .carousel-list-more {
+    top: 360px;
+    right: 446px;
+}
+
+.carousel-list_2 .carousel-list-more {
+    top: 360px;
+    left: 160px;
+}
+/* 轮播图左右按钮 */
+.carousel-list {
+    position: relative;
+}
+
+.carousel-list:hover .carousel-list_left {
+    visibility: visible;
+}
+
+.carousel-list .carousel-list_left {
+    position: absolute;
+    z-index: 20;
+    top: 0;
+    /* left: -130px; */
+    left: 0px;
+    width: 136px;
+    height: 560px;
+    visibility: hidden;
+}
+
+.carousel-list_left:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -16.5px;
+    margin-left: -10px;
+    display: block;
+    width: 20px;
+    height: 33px;
+    background-image: url(../images/carousel-left.png);
+}
+
+.carousel-list:hover .carousel-list_right {
+    visibility: visible;
+}
+
+.carousel-list .carousel-list_right {
+    position: absolute;
+    z-index: 20;
+    top: 0;
+    /* right: -130px; */
+    right: 0px;
+    width: 136px;
+    height: 560px;
+    visibility: hidden;
+}
+
+.carousel-list_right:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -16.5px;
+    margin-left: -10px;
+    display: block;
+    width: 20px;
+    height: 33px;
+    background-image: url(../images/carousel-right.png);
+}
+/* 轮播图小圆点 */
+.carousel-list-dots {
+    position: absolute;
+    bottom: 110px;
+    right: 134px;
+}
+
+.carousel-list-dots li {
+    float: left;
+    width: 14px;
+    height: 14px;
+    box-sizing: border-box;
+    border: 2px solid #404040;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.carousel-list-dots-active {
+    background-color: #404040;
+}
+/* 轮播导航 */
+.carousel-nav {
+    position: relative;
+    /* top: 460px; */
+    top: calc((560px - 460px) * -1);
+    left: 0px;
+    width: 1106px;
+    height: 183px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 80px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    padding: 20px 0;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.carousel-nav a {
+    float: left;
+    display: block;
+    width: calc(100% / 3);
+    height: 143px;
+    border-left: 1px solid #d4d4d4;
+    box-sizing: border-box;
+    padding: 10px 40px;
+}
+
+.carousel-nav a:nth-child(1) {
+    border: 0;
+}
+
+.carousel-nav a:hover h3 {
+    color: #f66f6a;
+}
+
+.carousel-nav a:hover div img {
+    float: right;
+    display: block;
+    width: 20px;
+    height: 19px;
+    padding: 0;
+    margin-left: 20px;
+    background-image: url(../images/fenxiang.png);
+
+}
+
+.carousel-nav img {
+    float: left;
+    padding: 10px 0px;
+}
+
+.carousel-nav div {
+    float: right;
+    width: 180px;
+    padding-right: 10px;
+
+}
+
+.carousel-nav h3 {
+    float: left;
+    font-size: 22px;
+    color: #222;
+    margin-top: 6px;
+    margin-bottom: 16px;
+
+}
+
+.carousel-nav p {
+    float: left;
+    font-size: 18px;
+    color: #666;
 }
