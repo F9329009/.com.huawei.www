@@ -215,15 +215,24 @@
     margin: 0 auto;
 }
 
-.carousel li {
+.carousel-list {
     position: relative;
-    width: 1366px;
     height: 560px;
+    overflow: hidden;
 }
 
-.carousel-list a {
-    float: left;
-    display: block;
+.carousel-list li {
+    position: absolute;
+    top: 0;
+    right: -1366px;
+    /* width:  1366px; */
+    width: 0;
+    height: 0;
+    transition: all 1s;
+}
+
+.carousel-list .carousel-list_active {
+    right: 0px;
     width: 1366px;
     height: 560px;
 }
@@ -238,7 +247,7 @@
     background-image: url(../upload/banner_1_5g.png);
 }
 
-.carousel-list .carousel-list-more {
+.carousel-list-more {
     position: absolute;
     display: block;
     width: 132px;
@@ -247,7 +256,7 @@
     font-size: 22px;
 }
 
-.carousel-list .carousel-list-more:after {
+.carousel-list-more:after {
     content: "";
     position: absolute;
     top: 1px;
@@ -335,8 +344,10 @@
 /* 轮播图小圆点 */
 .carousel-list-dots {
     position: absolute;
+    float: right;
     bottom: 110px;
     right: 134px;
+    height: 14px;
 }
 
 .carousel-list-dots li {
@@ -422,4 +433,186 @@
     float: left;
     font-size: 18px;
     color: #666;
+}
+/* 云服务 */
+.cloud {
+    height: 640px;
+    padding-top: 184px;
+}
+
+.cloud-left {
+    float: left;
+    position: relative;
+}
+
+.cloud-left>a {
+    position: relative;
+    display: block;
+    padding-top: 100px;
+    padding-bottom: 166px;
+    padding-right: 212px;
+}
+
+.cloud-left>a:hover .cloud-left-up {
+    transition: all 0.4s;
+    top: 40px;
+}
+
+.cloud-left>a:hover .cloud-left-lo {
+    transition: all 0.4s;
+    top: 575px;
+}
+
+.cloud-left>a:hover .carousel-list-more:after {
+    transition: all 0.2s;
+    right: -10px;
+}
+
+.cloud-left-bg {
+    position: absolute;
+    top: 0;
+    left: -120px;
+    width: 630px;
+    height: 450px;
+    background: linear-gradient(to bottom right, #15b0e8, #59c8d5);
+    padding-top: 100px;
+    padding-bottom: 120px;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    box-sizing: border-box;
+    z-index: -1;
+}
+
+.cloud-left .text {
+    width: 288px;
+    color: #fff;
+}
+
+.cloud-left h2 {
+    font-size: 38px;
+    margin-bottom: 32px;
+}
+
+.cloud-left h4 {
+    font-size: 24px;
+    margin-bottom: 54px;
+}
+
+.cloud-left .carousel-list-more {
+    color: #fff;
+}
+
+.cloud-left .carousel-list-more:after {
+    background-image: url(../images/jiantou_right_white.png);
+}
+
+.cloud-left-up {
+    position: absolute;
+    top: 60px;
+    left: 305px;
+}
+
+.cloud-left-lo {
+    position: absolute;
+    top: 555px;
+    left: 305px;
+}
+
+.cloud-right {
+    float: right;
+}
+
+.cloud-right>a {
+    display: block;
+    width: 452px;
+    height: 640px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.cloud-right img {
+    display: block;
+    width: 452px;
+    height: 240px;
+}
+
+.cloud-right>a>div {
+    height: 400px;
+    padding: 40px 60px;
+    background-color: #dde6ed;
+    border-radius: 0px 0px 5px 5px;
+    box-sizing: border-box;
+}
+
+.cloud-right div>div {
+    font-size: 14px;
+    margin-top: 15px;
+    color: #666;
+}
+
+.cloud-right h2 {
+    font-size: 38px;
+    line-height: 48px;
+    margin: 12px auto;
+}
+
+.cloud-right h4 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.cloud-right span {
+    margin-top: 100px;
+}
+/* 守护雨林 */
+.duard {
+    width: 1366px;
+    margin: 100px auto;
+}
+
+.duard_video_box {
+    position: relative;
+    width: 1366px;
+    height: 622px;
+    overflow: hidden;
+}
+
+.duard_video_box:hover span {
+    width: 78px;
+    height: 78px;
+    margin-top: -39px;
+    margin-left: -39px;
+    transition: all 0.2s;
+}
+
+.duard img {
+    width: 1366px;
+}
+
+.duard span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -35px;
+    margin-left: -35px;
+    width: 70px;
+    height: 70px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,0.1);
+}
+
+.duard span:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -14px;
+    margin-left: -7px;
+    font-size: 0;
+    width: 0;
+    height: 0;
+    border: 14px solid transparent;
+    border-left-color: #eb5b56;
 }
