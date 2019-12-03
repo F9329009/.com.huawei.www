@@ -264,7 +264,7 @@
     display: block;
     width: 32px;
     height: 19px;
-    background-image: url(../images/jiantou_right.png);
+    background-image: url(../images/jiantou_right_black.png);
 }
 
 .carousel-list-more:hover:after {
@@ -615,4 +615,145 @@
     height: 0;
     border: 14px solid transparent;
     border-left-color: #eb5b56;
+}
+/* 展会活动 */
+.exhibition-title {
+    width: 100%;
+    height: 100px;
+}
+.exhibition-title h2{
+    float: left;
+    font-size: 38px;
+}
+
+.exhibition-title a {
+    position: relative;
+    float: right;
+    font-size: 22px;
+    color: #222;
+    padding-right: 28px ;
+}
+
+.exhibition-title a:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    margin-top: -6px;
+    display: block;
+    width: 6px;
+    height: 11px;
+    background-image: url(../images/jiantou_right.png);
+}
+
+.exhibition-title a:hover:after {
+    transition: all 0.2s;
+    right: -10px;
+}
+
+.exhibition-carousel {
+    position: relative;
+    height: 526px;
+    /* overflow: hidden; */
+    
+}
+
+.exhibition-carousel-list {
+    position: relative;
+    height: 526px;
+}
+
+.exhibition-carousel-list>div {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: none;
+}
+
+.exhibition-carousel-list>div:nth-child(2) {
+    display: block;
+}
+
+.exhibition-carousel-list>div>a {
+    display: block;
+    width: 100%;
+    height: 406px;
+    padding-top: 50px;
+    padding-bottom: 60px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.exhibition-carousel-list>div:hover .carousel-list-more:after {
+    transition: all 0.2s;
+    right: -10px;
+}
+/* 左右按钮 */
+.exhibition-carousel-left {
+    position: absolute;
+    top: 50%;
+    left: -60px;
+    margin-top: -17px;
+    width: 20px;
+    height: 34px;
+    background-image: url(../images/carousel-left.png);
+}
+
+.exhibition-carousel-right {
+    position: absolute;
+    top: 50%;
+    right: -60px;
+    margin-top: -17px;
+    width: 20px;
+    height: 34px;
+    background-image: url(../images/carousel-right.png);
+
+}
+/* 轮播内容 */
+.exhibition-carousel-text {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: #dce6ee;
+    width: 600px;
+    height: 420px;
+    padding-top: 50px;
+    padding-bottom: 60px;
+    padding-left: 106px;
+    padding-right: 80px;
+    box-sizing: border-box;
+}
+
+.exhibition-carousel-text div {
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.exhibition-carousel-text h3 {
+    font-size: 28px;
+    line-height: 38px;
+    margin-bottom: 14px;
+}
+
+.exhibition-carousel-text h4 {
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 24px;
+}
+
+.exhibition-carousel-text p {
+    font-size: 18px;
+    line-height: 30px;
+    /* margin-bottom: 100px; */
+}
+
+.exhibition-carousel-text .carousel-list-more {
+    margin-top: 40px;
+}
+
+.exhibition-carousel img {
+    position: absolute;
+    top: 0px;
+    left: 586px;
+    margin-top: -55px;
 }
