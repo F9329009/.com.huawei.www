@@ -617,16 +617,16 @@
     border-left-color: #eb5b56;
 }
 /* 展会活动 */
-.exhibition-title {
+.box-title {
     width: 100%;
     height: 100px;
 }
-.exhibition-title h2{
+.box-title h2{
     float: left;
     font-size: 38px;
 }
 
-.exhibition-title a {
+.box-title a {
     position: relative;
     float: right;
     font-size: 22px;
@@ -634,7 +634,7 @@
     padding-right: 28px ;
 }
 
-.exhibition-title a:after {
+.box-title a:after {
     content: "";
     position: absolute;
     top: 50%;
@@ -646,7 +646,7 @@
     background-image: url(../images/jiantou_right.png);
 }
 
-.exhibition-title a:hover:after {
+.box-title a:hover:after {
     transition: all 0.2s;
     right: -10px;
 }
@@ -656,6 +656,11 @@
     height: 526px;
     /* overflow: hidden; */
     
+}
+
+.exhibition-carousel {
+    width: 100%;
+    height: 670px;
 }
 
 .exhibition-carousel-list {
@@ -722,6 +727,7 @@
     padding-left: 106px;
     padding-right: 80px;
     box-sizing: border-box;
+    border-radius: 5px 0 0 5px;
 }
 
 .exhibition-carousel-text div {
@@ -756,6 +762,7 @@
     top: 0px;
     left: 586px;
     margin-top: -55px;
+    border-radius: 5px;
 }
 
 .exhibition-carousel>ul {
@@ -780,4 +787,78 @@
 
 .exhibition-carousel li:nth-child(1) {
     background-color: #404040;
+}
+/* 成功故事 */
+.story {
+    width: 100%;
+    height: 440px;
+}
+
+.story-content>a {
+    position: relative;
+    float: left;
+    display: block;
+    width: 310px;
+    height: 438px;
+    padding: 0px 33px;
+}
+
+.story-content>a:hover img{
+    margin-left: -20px;
+}
+
+.story-content>a:hover .carousel-list-more:after {
+    transition: all 0.2s;
+    right: -10px;
+}
+
+.story-content-bg {
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    margin-left: -155px;
+    width: 310px;
+    height: 350px;
+    background-color: #dde6ed;
+    margin-bottom: 100px;
+    border-radius: 5px;
+}
+
+.story-content-bg img {
+    position: absolute;
+    top: -90px;
+    left: 0px;
+    width: 310px;
+    border-radius: 5px 5px 0 0;
+}
+
+.story-content-bg-text {
+    position: absolute;
+    top: 90px;
+    left: 0px;
+    width: 310px;
+    height: 260px;
+    padding: 30px 40px;
+    padding-bottom: 60px;
+    box-sizing: border-box;
+}
+
+.story-content-bg-text div {
+    width: 230px;
+    height: 128px;
+    margin-bottom: 20px;
+}
+
+.story-content-bg-text div span {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.story-content-bg-text div h3 {
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+.story .carousel-list-more {
+    width: 92px;
 }
