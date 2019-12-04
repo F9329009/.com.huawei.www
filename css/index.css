@@ -791,7 +791,7 @@
 /* 成功故事 */
 .story {
     width: 100%;
-    height: 440px;
+    padding-bottom: 100px;
 }
 
 .story-content>a {
@@ -861,4 +861,216 @@
 
 .story .carousel-list-more {
     width: 92px;
+}
+/* 最近新闻 */
+.news {
+    margin-bottom: 100px;
+}
+
+.news-content-left {
+    float: left;
+    width: 408px;
+    padding: 0 20px;
+}
+
+.news-content-left a {
+    display: block;
+    width: 408px;
+    height: 496px;
+}
+
+.news-content-left-img {
+    position: relative;
+    width: 408px;
+    height: 220px;
+    overflow: hidden;
+    background-color: red;
+    line-height: 426px;
+    border-radius: 5px 5px 0 0;
+}
+
+.news-content-left-img img {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.news-content-left-text {
+    width: 408px;
+    height: 276px;
+    background-color: #dde6ed;
+    padding: 30px 40px;
+    box-sizing: border-box;
+    border-radius: 0 0 5px 5px;
+}
+
+.news-content-left-text div {
+    font-size: 14px;
+    color: #666;
+}
+
+.news-content-left-text h3 {
+    font-size: 22px;
+    line-height: 32px;
+    height: 120px;
+    margin-top: 5px;
+    margin-bottom: 40px;
+}
+
+.news-content-left-text .carousel-list-more {
+    width: 90px;
+}
+
+.news-content-right {
+    float: left;
+    width: 560px;
+    height: 450px;
+    margin-left: 115px;
+}
+
+.news-content-right ul {
+    width: 450px;
+}
+
+.news-content-right li {
+    padding-bottom: 60px;
+}
+
+.news-content-right li div {
+    font-size: 14px;
+    line-height: 22px;
+    color: #666;
+}
+
+.news-content-right li a {
+    font-size: 18px;
+    line-height: 30px;
+    color: #282828;
+}
+
+.news-content-right li a:hover {
+    text-decoration: underline;
+}
+/* 页脚 */
+.footre {
+    padding-top: 60px;
+    background-color: #f0f0f0;
+}
+
+.footre-nav {
+    float: left;
+    margin-bottom: 30px;
+}
+
+.footre-nav div {
+    float: left;
+    width: 280px;
+}
+
+
+.footre-nav div:nth-child(4) {
+    width: 188px;
+}
+
+.footre-nav h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.footre-nav h3:hover a {
+    transition: all 0.2s;
+    margin-right: 10px;
+}
+
+.footre-nav li {
+    font-size: 16px;
+    padding-bottom: 20px;
+}
+
+.footre-nav .footre-nav-social {
+    float: left;
+    width: 100px;
+}
+
+.footre-nav-social li {
+    padding-bottom: 30px;
+}
+
+.footre-others-nav {
+    float: left;
+}
+
+.footre-others-nav h3 {
+    font-size: 22px;
+    margin: 20px 0;
+}
+
+.footre-others-nav h3:nth-child(1) {
+    margin-top: 0;
+}
+
+.footre-others-nav li {
+    display: inline-block;
+    width: 260px;
+    font-size: 16px;
+    padding-bottom: 20px;
+}
+
+.footre-others-nav a {
+    position: relative;
+}
+
+.footre-others-nav a:hover {
+    text-decoration: underline;
+}
+
+.footre-others-nav a:hover:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -26px;
+    margin-top: -10px;
+    background-image: url(../images/fenxiang.png);
+    width: 20px;
+    height: 19px;
+}
+
+.footre-others-nav-no_share:hover:after {
+    display: none;
+}
+/* 底部 */
+.footre-bottom {
+    width: 100%;
+    height: 40px;
+    color: #fff;
+    background-color: #222;
+    margin-top: 60px;
+    line-height: 40px;
+    font-size: 14px;
+}
+
+.footre-bottom a {
+    color: #fff;
+}
+
+.footre-bottom-left {
+    float: left;
+}
+
+.footre-bottom-left span {
+    margin-right: 18px;
+}
+
+.footre-bottom-left a:hover {
+    text-decoration: underline;
+}
+
+.footre-bottom-right {
+    float: right;
+}
+
+.footre-bottom-right span {
+    margin: 0 14px;
 }
