@@ -38,11 +38,27 @@
                     <img src="./images/logo.png" alt="">
                 </a>
                 <ul class="searchnav-service">
-                    <li>
+                    <li class="searchnav-service-li_1" onmouseover="li_1_block()" onmouseout='li_1_none()'>
                         <img src="./images/phone.png" alt="">
                         <a href="#">手机、笔记本&平板...</a>
+                        <script>
+                            function li_1_block() {
+                                // document.getElementById("searchnav-service-li_1").style.display = "block";
+                                // document.getElementById("searchnav-service-li_1").style.transition = "all 1s";
+                                // document.getElementById("searchnav-service-li_1").style.height = "406px";
+                                document.getElementById("searchnav-service-li_1").style.marginTop = "0px";
+                                document.getElementById("searchnav-service-li_1").style.opacity = "1";
+
+                            }
+                            function li_1_none() {
+                                // document.getElementById("searchnav-service-li_1").style.display = "none";
+                                // document.getElementById("searchnav-service-li_1").style.height = "0px";
+                                document.getElementById("searchnav-service-li_1").style.marginTop = "-4px";
+                                document.getElementById("searchnav-service-li_1").style.opacity = "0";
+                            }
+                        </script>
                     </li>
-                    <li>
+                    <li class="searchnav-service-li_2">
                         <img src="./images/jiejuefangan.png" alt="">
                         <a href="#">解决方案&服务</a>
                     </li>
@@ -59,6 +75,103 @@
             <!-- 搜索导航右边 -->
             <div class="searchnav-right">
                 <img src="./images/sousuo.png" alt="">
+            </div>
+        </div>
+        <!-- 展开 -->
+        <div class="searchnav-service-li_1-open" id="searchnav-service-li_1">
+            <div class="container clearfix">
+                <div class="searchnav-service-li_1-open-left">
+                    <a href="#"></a>
+                    <img src="./upload/nav_mate30pro_cn.jpg" alt="">
+                    <div class="searchnav-service-li_1-open-left-more">
+                        <a href="#">了解更多</a>
+                    </div>
+                </div>
+                <div class="searchnav-service-li_1-open-in">
+                    <ul class="searchnav-service-li_1-open-list">
+                        <li>
+                            <a href="#">
+                                <img src="./images/phone.png" alt="">
+                                <p>
+                                    <span>手机</span>
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/phone.png" alt="">
+                                <p>
+                                    <span>手机</span>
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/phone.png" alt="">
+                                <p>
+                                    <span>手机</span>
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/phone.png" alt="">
+                                <p>
+                                    <span>手机</span>
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/phone.png" alt="">
+                                <p>
+                                    <span>手机</span>
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/phone.png" alt="">
+                                <p>
+                                    <span>手机</span>
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/phone.png" alt="">
+                                <p>
+                                    <span>手机</span>
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/phone.png" alt="">
+                                <p>
+                                    <span>手机</span>
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="#" class="searchnav-service-li_1-open-url">
+                        前往
+                        <span>consumer.huawei.com</span>
+                        查看全部产品
+                    </a>
+                </div>
+                <div class="searchnav-service-li_1-open-right">
+                    <div class="searchnav-service-li_1-open-right-support">
+                        <h3>需要技术支持？</h3>
+                        <ul>
+                            <li><a href="#">寄修服务</a></li>
+                            <li><a href="#">预约服务</a></li>
+                            <li><a href="#">保修状态查询</a></li>
+                            <li><a href="#">保修政策</a></li>
+                        </ul>
+                        <a href="#">访问<span>技术支持中心</span></a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

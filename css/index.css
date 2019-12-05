@@ -140,7 +140,8 @@
     margin-top: 14px;
 }
 
-.searchnav li {
+.searchnav-left li,
+.searchnav-service-li_1-open-in li {
     float: left;
     line-height: 50px;
 }
@@ -174,7 +175,7 @@
     background-image: url(../images/jiantou_lo.png);
 }
 
-.searchnav-service li:nth-child(2) a {
+.searchnav-service .searchnav-service-li_2 a {
     width: 145px;
 }
 
@@ -206,6 +207,189 @@
     width: 25px;
     margin-top: 26px;
     margin-right: 8px;
+}
+/* 展开 */
+.searchnav-service-li_1-open {
+    position: absolute;
+    top: 74px;
+    left: 0px;
+    width: 100%;
+    height: 406px;
+    opacity: 0;
+    margin-top: -4px;
+    background-color: #f5f5f5;
+    transition: all 0.4s;
+    overflow: hidden;
+}
+
+.searchnav-service-li_1-open-left {
+    float: left;
+    position: relative;
+    width: 260px;
+}
+
+.searchnav-service-li_1-open-left img {
+    width: 260px;
+    margin-top: 40px;
+    border-radius: 5px;
+}
+
+.searchnav-service-li_1-open-left>a {
+    position: absolute;
+    top: 40px;
+    display: block;
+    width: 260px;
+    height: 300px;
+}
+
+.searchnav-service-li_1-open-left-more {
+    position: absolute;
+    right: -18px;
+    bottom: -10px;
+    width: 147px;
+    height: 40px;
+    background-color: #f66f6a;
+    border-radius: 5px;
+}
+
+.searchnav-service-li_1-open-left-more a {
+    position: relative;
+    color: #fff;
+    font-size: 18px;
+    padding-left: 20px;
+    line-height: 40px;
+}
+
+.searchnav-service-li_1-open-left-more a:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -36px;
+    margin-top: -4px;
+    width: 5px;
+    height: 9px;
+    background-image: url(../images/xiajiantou_right.png);
+}
+
+.searchnav-service-li_1-open .searchnav-service-li_1-open-list {
+    float: left;
+    margin-top: 80px;
+    margin-left: 60px;
+    width: 600px;
+    height: 256px;
+}
+
+.searchnav-service-li_1-open-list li {
+    float: left;
+    width: 150px;
+    height: 88px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.searchnav-service-li_1-open-list a {
+    display: block;
+    width: 150px;
+    height: 88px;
+}
+
+.searchnav-service-li_1-open-list img {
+    height: 52px;
+}
+
+.searchnav-service-li_1-open-list p {
+    font-size: 18px;
+    margin-top: -30px;
+}
+
+.searchnav-service-li_1-open-list li:hover span {
+    position: relative;
+    color: #f66f6a;
+}
+
+.searchnav-service-li_1-open-list li:hover span:after,
+.searchnav-service-li_1-open-url:hover:after,
+.searchnav-service-li_1-open-right-support a:hover:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -28px;
+    margin-top: -10px;
+    width: 20px;
+    height: 19px;
+    background-image: url(../images/fenxiang.png);
+}
+
+.searchnav-service-li_1-open-in {
+    position: relative;
+    float: left;
+}
+
+.searchnav-service-li_1-open-url {
+    position: absolute;
+    left: 0px;
+    bottom: -22px;
+    margin-left: 60px;
+    font-size: 16px;
+}
+
+.searchnav-service-li_1-open-url:hover,
+.searchnav-service-li_1-open-url:hover span {
+    text-decoration: underline;
+}
+
+.searchnav-service-li_1-open-url span {
+    color: #f66f6a;
+}
+
+.searchnav-service-li_1-open-right {
+    float: left;
+    width: 188px;
+    padding: 40px 15px;
+    box-sizing: border-box;
+}
+
+.searchnav-service-li_1-open-right a:hover,
+.searchnav-service-li_1-open-right-support>a:hover span {
+    text-decoration: underline;
+}
+
+.searchnav-service-li_1-open-right a:hover {
+    text-decoration: underline;
+}
+
+.searchnav-service-li_1-open-right-support {
+    float: left;
+    width: 188px;
+}
+
+.searchnav-service-li_1-open-right-support h3 {
+    font-size: 18px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+}
+
+.searchnav-service-li_1-open-right-support ul {
+    height: 250px;
+    padding-left: 20px;
+}
+
+.searchnav-service-li_1-open-right-support li {
+    width: 188px;
+    font-size: 14px;
+    margin-top: 24px;
+}
+
+.searchnav-service-li_1-open-right-support a {
+    position: relative;
+}
+
+.searchnav-service-li_1-open-right-support>a {
+    font-size: 16px;
+}
+
+.searchnav-service-li_1-open-right-support span {
+    color: #f66f6a;
 }
 /* 轮播图 */
 .carousel {
