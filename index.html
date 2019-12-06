@@ -19,7 +19,19 @@
         <div class="container clearfix">
             <!-- 顶部导航左边 -->
             <div class="topnav-left">
-                <a href="#">集团网站</a>
+                <a href="javascrip:;" onclick="jituan()" class="topnav-left-jituan">集团网站</a>
+                <script>
+                    var jituan_i = 0;
+                    function jituan() {
+                        if (jituan_i == 0) {
+                            document.getElementById("topnav-jituan-open").style.height = "154px";
+                            jituan_i = 1;
+                        } else {
+                            document.getElementById("topnav-jituan-open").style.height = "0px";
+                            jituan_i = 0;
+                        }
+                    }
+                </script>
             </div>
             <!-- 顶部导航右边 -->
             <div class="topnav-right">
@@ -28,8 +40,45 @@
             </div>
         </div>
     </div>
+    <!-- 展开 -->
+    <div class="topnav-jituan-open" id="topnav-jituan-open">
+        <div class="container">
+            <ul>
+                <li>
+                    <h3>集团网站</h3>
+                    <p>
+                        公司信息，社会责任，新闻，展会活动，行业洞察等等
+                    </p>
+                </li>
+                <li>
+                    <h3>
+                        <a href="#">个人用户</a>
+                    </h3>
+                    <p>
+                        手机，PC和平板，穿戴设备等个人及家用产品
+                    </p>
+                </li>
+                <li>
+                    <h3>
+                        <a href="#">企业用户</a>
+                    </h3>
+                    <p>
+                        企业商用产品、解决方案和云服务
+                    </p>
+                </li>
+                <li>
+                    <h3>
+                        <a href="#">运营商用户</a>
+                    </h3>
+                    <p>
+                        运营商网络解决方案、产品及服务
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
     <!-- 搜索导航 -->
-    <div class="searchnav">
+    <div class="searchnav" id="searchnav">
         <!-- 版心 -->
         <div class="container clearfix">
             <!-- 搜索导航左边 -->
@@ -43,18 +92,16 @@
                         <a href="#">手机、笔记本&平板...</a>
                         <script>
                             function li_1_block() {
-                                // document.getElementById("searchnav-service-li_1").style.display = "block";
-                                // document.getElementById("searchnav-service-li_1").style.transition = "all 1s";
-                                // document.getElementById("searchnav-service-li_1").style.height = "406px";
-                                document.getElementById("searchnav-service-li_1").style.marginTop = "0px";
-                                document.getElementById("searchnav-service-li_1").style.opacity = "1";
-
+                                document.getElementById("searchnav-service-li_1-open").style.visibility = "visible";
+                                document.getElementById("searchnav-service-li_1-open").style.marginTop = "-4px";
+                                document.getElementById("searchnav-service-li_1-open").style.opacity = "0";
+                                document.getElementById("searchnav-service-li_1-open").style.marginTop = "0px";
+                                document.getElementById("searchnav-service-li_1-open").style.opacity = "1"
                             }
                             function li_1_none() {
-                                // document.getElementById("searchnav-service-li_1").style.display = "none";
-                                // document.getElementById("searchnav-service-li_1").style.height = "0px";
-                                document.getElementById("searchnav-service-li_1").style.marginTop = "-4px";
-                                document.getElementById("searchnav-service-li_1").style.opacity = "0";
+                                document.getElementById("searchnav-service-li_1-open").style.visibility = "hidden";
+                                document.getElementById("searchnav-service-li_1-open").style.marginTop = "-4px";
+                                document.getElementById("searchnav-service-li_1-open").style.opacity = "0";
                             }
                         </script>
                     </li>
@@ -78,7 +125,8 @@
             </div>
         </div>
         <!-- 展开 -->
-        <div class="searchnav-service-li_1-open" id="searchnav-service-li_1">
+        <div class="searchnav-service-li_1-open" id="searchnav-service-li_1-open" onmouseover="li_1_block()"
+            onmouseout='li_1_none()'>
             <div class="container clearfix">
                 <div class="searchnav-service-li_1-open-left">
                     <a href="#"></a>
