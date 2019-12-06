@@ -28,6 +28,13 @@
     display: block;
     width: 8px;
     height: 5px;
+}
+
+.topnav-left-jituan-up:after {
+    background-image: url(../images/shangjiantou.png);
+}
+
+.topnav-left-jituan-lo:after {
     background-image: url(../images/xiajiantou.png);
 }
 

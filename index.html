@@ -19,15 +19,19 @@
         <div class="container clearfix">
             <!-- 顶部导航左边 -->
             <div class="topnav-left">
-                <a href="javascrip:;" onclick="jituan()" class="topnav-left-jituan">集团网站</a>
+                <a href="javascrip:;" onclick="jituan()" class="topnav-left-jituan-lo" id="topnav-left-jituan">集团网站</a>
                 <script>
                     var jituan_i = 0;
                     function jituan() {
                         if (jituan_i == 0) {
                             document.getElementById("topnav-jituan-open").style.height = "154px";
+                            document.getElementById("topnav-left-jituan").classList.add("topnav-left-jituan-up");
+                            document.getElementById("topnav-left-jituan").classList.remove("topnav-left-jituan-lo");
                             jituan_i = 1;
                         } else {
                             document.getElementById("topnav-jituan-open").style.height = "0px";
+                            document.getElementById("topnav-left-jituan").classList.add("topnav-left-jituan-lo");
+                            document.getElementById("topnav-left-jituan").classList.remove("topnav-left-jituan-up");
                             jituan_i = 0;
                         }
                     }
