@@ -232,19 +232,55 @@
         <!-- 轮播 -->
         <ul class="carousel-list">
             <a class="carousel-list_left"></a>
-            <li class="carousel-list_1 carousel-list_active">
+            <li class="carousel_list carousel-list_1 carousel-list_active">
                 <img src="./upload/banner_1.jpg" alt="">
                 <a href="#" class="carousel-list-more">了解更多</a>
             </li>
-            <li class="carousel-list_2">
+            <li class="carousel_list carousel-list_2">
                 <img src="./upload/banner_2.jpg" alt="">
                 <a href="#" class="carousel-list-more">了解更多</a>
             </li>
+            <!-- <li class="carousel_list carousel-list_2">
+                <img src="./upload/banner_2.jpg" alt="">
+                <a href="#" class="carousel-list-more">了解更多</a>
+            </li> -->
             <a class="carousel-list_right"></a>
+            <script>
+                var next = 0;
+                function list_active() {
+                    var current = next;
+                    next++;
+                    var sum = document.getElementsByClassName("carousel_list");
+                    for (let i = 0; i < sum.length; i++) {
+                        sum[i].classList.remove("carousel-list_go");
+                        sum[i].classList.remove("carousel-list_active");
+                        console.log("删除第" + i + "个")
+                    }
+                    if (next >= sum.length) {
+                        next = 0;
+                    }
+                    console.log(sum);
+                    console.log(next);
+                    console.log(current);
+                    // sum[current].style.right = "1366px";
+                    sum[next].classList.add("carousel-list_active");
+                    // sum[current].style.right = "1366px";
+                    sum[current].classList.add("carousel-list_go");
+                    sum[current].classList.remove("carousel-list_active");
+
+                    // sum[current].style.right = "-1366px";
+                    // 小圆点
+                    var dots = document.getElementsByClassName("carousel-list-dots");
+                    dots[next].classList.add("carousel-list-dots-active");
+                    dots[current].classList.remove("carousel-list-dots-active");
+                }
+                //设置定时器，每隔2秒切换一张图片
+                setInterval(list_active, 2000);
+            </script>
         </ul>
-        <ul class="carousel-list-dots">
-            <li class="carousel-list-dots-active"></li>
-            <li></li>
+        <ul class="carousel-list-dots_list">
+            <li class="carousel-list-dots carousel-list-dots-active"></li>
+            <li class="carousel-list-dots"></li>
         </ul>
         <!-- 轮播导航 -->
         <div class="container clearfix">

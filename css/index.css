@@ -475,13 +475,20 @@
     /* width:  1366px; */
     width: 0;
     height: 0;
+
+    width: 1366px;
+    height: 560px;
+
+    transition: all 0s;
+}
+.carousel-list .carousel-list_go {
     transition: all 1s;
+    right: 1366px;
 }
 
 .carousel-list .carousel-list_active {
+    transition: all 1s;
     right: 0px;
-    width: 1366px;
-    height: 560px;
 }
 
 .carousel-list_1:after {
@@ -589,7 +596,7 @@
     background-image: url(../images/carousel-right.png);
 }
 /* 轮播图小圆点 */
-.carousel-list-dots {
+.carousel-list-dots_list {
     position: absolute;
     float: right;
     bottom: 110px;
@@ -597,7 +604,7 @@
     height: 14px;
 }
 
-.carousel-list-dots li {
+.carousel-list-dots {
     float: left;
     width: 14px;
     height: 14px;
