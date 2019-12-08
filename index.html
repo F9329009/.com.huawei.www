@@ -231,7 +231,7 @@
     <div class="carousel clearfix">
         <!-- 轮播 -->
         <ul class="carousel-list">
-            <a class="carousel-list_left"></a>
+            <a href="javascrip:;" class="carousel-list_left" onclick="carousel_list_active_1()"></a>
             <li class="carousel_list carousel-list_1 carousel-list_active">
                 <img src="./upload/banner_1.jpg" alt="">
                 <a href="#" class="carousel-list-more">了解更多</a>
@@ -240,46 +240,71 @@
                 <img src="./upload/banner_2.jpg" alt="">
                 <a href="#" class="carousel-list-more">了解更多</a>
             </li>
-            <!-- <li class="carousel_list carousel-list_2">
+            <li class="carousel_list carousel-list_1">
+                <img src="./upload/banner_1.jpg" alt="">
+                <a href="#" class="carousel-list-more">了解更多</a>
+            </li>
+            <li class="carousel_list carousel-list_2">
                 <img src="./upload/banner_2.jpg" alt="">
                 <a href="#" class="carousel-list-more">了解更多</a>
-            </li> -->
-            <a class="carousel-list_right"></a>
+            </li>
+            <a href="javascrip:;" class="carousel-list_right" onclick="carousel_list_active()"></a>
             <script>
-                var next = 0;
-                function list_active() {
-                    var current = next;
-                    next++;
-                    var sum = document.getElementsByClassName("carousel_list");
+                var carousel_next = 0;
+                function carousel_list_active() {
+                    let current = carousel_next;
+                    carousel_next++;
+                    let sum = document.getElementsByClassName("carousel_list");
                     for (let i = 0; i < sum.length; i++) {
                         sum[i].classList.remove("carousel-list_go");
                         sum[i].classList.remove("carousel-list_active");
                         console.log("删除第" + i + "个")
                     }
-                    if (next >= sum.length) {
-                        next = 0;
+                    if (carousel_next >= sum.length) {
+                        carousel_next = 0;
                     }
                     console.log(sum);
-                    console.log(next);
+                    console.log(carousel_next);
                     console.log(current);
-                    // sum[current].style.right = "1366px";
-                    sum[next].classList.add("carousel-list_active");
-                    // sum[current].style.right = "1366px";
+                    sum[carousel_next].classList.add("carousel-list_active");
                     sum[current].classList.add("carousel-list_go");
                     sum[current].classList.remove("carousel-list_active");
-
-                    // sum[current].style.right = "-1366px";
                     // 小圆点
                     var dots = document.getElementsByClassName("carousel-list-dots");
-                    dots[next].classList.add("carousel-list-dots-active");
+                    dots[carousel_next].classList.add("carousel-list-dots-active");
                     dots[current].classList.remove("carousel-list-dots-active");
                 }
-                //设置定时器，每隔2秒切换一张图片
-                setInterval(list_active, 2000);
+
+                function carousel_list_active_1() {
+                    let current = carousel_next;
+                    carousel_next--;
+                    let sum = document.getElementsByClassName("carousel_list");
+                    for (let i = 0; i < sum.length; i++) {
+                        sum[i].classList.remove("carousel-list_go");
+                        sum[i].classList.remove("carousel-list_active");
+                        console.log("删除第" + i + "个")
+                    }
+                    if (carousel_next < 0) {
+                        carousel_next = sum.length - 1;
+                        console.log(carousel_next);
+                    }
+                    sum[carousel_next].classList.add("carousel-list_active");
+                    sum[current].classList.add("carousel-list_go");
+                    sum[current].classList.remove("carousel-list_active");
+                    // 小圆点
+                    let dots = document.getElementsByClassName("carousel-list-dots");
+                    dots[carousel_next].classList.add("carousel-list-dots-active");
+                    dots[current].classList.remove("carousel-list-dots-active");
+                }
+
+                //设置定时器，每隔5秒切换一张图片
+                setInterval(carousel_list_active, 5000);
             </script>
         </ul>
         <ul class="carousel-list-dots_list">
             <li class="carousel-list-dots carousel-list-dots-active"></li>
+            <li class="carousel-list-dots"></li>
+            <li class="carousel-list-dots"></li>
             <li class="carousel-list-dots"></li>
         </ul>
         <!-- 轮播导航 -->
@@ -359,9 +384,9 @@
                 <a href="#">查看全部</a>
             </div>
             <div class="exhibition-carousel">
-                <a href="#" class="exhibition-carousel-left"></a>
+                <a href="javascrip:;" class="exhibition-carousel-left" onclick="exhibition_list_active_1()"></a>
                 <div class="exhibition-carousel-list">
-                    <div>
+                    <div class="exhibition-carousel_list exhibition-carousel-list_active">
                         <a href="#">
                             <div class="exhibition-carousel-text">
                                 <div>展会活动</div>
@@ -373,7 +398,31 @@
                             <img src="./upload/exhibition_1.png" alt="">
                         </a>
                     </div>
-                    <div>
+                    <div class="exhibition-carousel_list">
+                        <a href="#">
+                            <div class="exhibition-carousel-text">
+                                <div>展会活动</div>
+                                <h3>SCEWC 2019华为全球智慧城市展</h3>
+                                <h4>西班牙，巴塞罗那 | 11月19-21日</h4>
+                                <p>在城市数字化转型中，华为提出基于“平台+生态”的智慧城市“1+1+N”建设理念，重新定义城市信...</p>
+                                <span href="#" class="carousel-list-more">了解更多</span>
+                            </div>
+                            <img src="./upload/exhibition_2.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="exhibition-carousel_list">
+                        <a href="#">
+                            <div class="exhibition-carousel-text">
+                                <div>展会活动</div>
+                                <h3>上海·选择不凡 华为云城市峰会2019</h3>
+                                <h4>中国 上海 | 2019年12月4日</h4>
+                                <p>沪上华灯逐浪起，智慧云潮正当时</p>
+                                <span href="#" class="carousel-list-more">了解更多</span>
+                            </div>
+                            <img src="./upload/exhibition_1.png" alt="">
+                        </a>
+                    </div>
+                    <div class="exhibition-carousel_list">
                         <a href="#">
                             <div class="exhibition-carousel-text">
                                 <div>展会活动</div>
@@ -386,10 +435,66 @@
                         </a>
                     </div>
                 </div>
-                <a href="#" class="exhibition-carousel-right"></a>
-                <ul>
-                    <li></li>
-                    <li></li>
+                <a href="javascrip:;" class="exhibition-carousel-right" onclick="exhibition_list_active()"></a>
+                <script>
+                    var exhibition_next = 0;
+                    function exhibition_list_active() {
+                        let current = exhibition_next;
+                        exhibition_next++;
+                        let sum = document.getElementsByClassName("exhibition-carousel_list");
+                        for (let i = 0; i < sum.length; i++) {
+                            sum[i].classList.remove("exhibition-carousel-list_go");
+                            sum[i].classList.remove("exhibition-carousel-list_active");
+                            console.log("删除第" + i + "个")
+                        }
+                        if (exhibition_next >= sum.length) {
+                            exhibition_next = 0;
+                        }
+                        // console.log(sum);
+                        // console.log(exhibition_next);
+                        // console.log(current);
+                        sum[exhibition_next].classList.add("exhibition-carousel-list_active");
+                        sum[current].classList.add("exhibition-carousel-list_go");
+                        sum[current].classList.remove("exhibition-carousel-list_active");
+                        // 小圆点
+                        let dots = document.getElementsByClassName("exhibition-carousel-list-dots");
+                        dots[exhibition_next].classList.add("exhibition-carousel-list-dots-active");
+                        dots[current].classList.remove("exhibition-carousel-list-dots-active");
+                    }
+
+
+                    function exhibition_list_active_1() {
+                        let current = exhibition_next;
+                        exhibition_next--;
+                        let sum = document.getElementsByClassName("exhibition-carousel_list");
+                        for (let i = 0; i < sum.length; i++) {
+                            sum[i].classList.remove("exhibition-carousel-list_go");
+                            sum[i].classList.remove("exhibition-carousel-list_active");
+                            console.log("删除第" + i + "个")
+                        }
+                        if (exhibition_next < 0) {
+                            exhibition_next = sum.length - 1;
+                        }
+                        // console.log(sum);
+                        // console.log(exhibition_next);
+                        // console.log(current);
+                        sum[exhibition_next].classList.add("exhibition-carousel-list_active");
+                        sum[current].classList.add("exhibition-carousel-list_go");
+                        sum[current].classList.remove("exhibition-carousel-list_active");
+                        // 小圆点
+                        var dots = document.getElementsByClassName("exhibition-carousel-list-dots");
+                        dots[exhibition_next].classList.add("exhibition-carousel-list-dots-active");
+                        dots[current].classList.remove("exhibition-carousel-list-dots-active");
+                    }
+
+                    //设置定时器，每隔5秒切换一张图片
+                    setInterval(exhibition_list_active, 5000);
+                </script>
+                <ul class="exhibition-carousel-list">
+                    <li class="exhibition-carousel-list-dots exhibition-carousel-list-dots-active"></li>
+                    <li class="exhibition-carousel-list-dots"></li>
+                    <li class="exhibition-carousel-list-dots"></li>
+                    <li class="exhibition-carousel-list-dots"></li>
                 </ul>
             </div>
         </div>

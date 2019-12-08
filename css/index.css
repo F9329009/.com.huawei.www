@@ -913,27 +913,25 @@
 }
 
 .exhibition-carousel {
+    position: relative;
     width: 100%;
-    height: 670px;
+    height: 466px;
+    /* height: 526px; */
+    /* margin-bottom: 14    4px; */
+    margin-bottom: 204px;
+    /* height: 670px; */
 }
 
 .exhibition-carousel-list {
-    position: relative;
-    height: 526px;
-}
-
-.exhibition-carousel-list>div {
     position: absolute;
+    width: 1366px;
+    height: 526px;
     top: 0px;
     left: 0px;
-    display: none;
+    overflow: hidden;
 }
 
-.exhibition-carousel-list>div:nth-child(2) {
-    display: block;
-}
-
-.exhibition-carousel-list>div>a {
+.exhibition-carousel-list>a {
     display: block;
     width: 100%;
     height: 406px;
@@ -943,10 +941,26 @@
     margin-bottom: 60px;
 }
 
-.exhibition-carousel-list>div:hover .carousel-list-more:after {
+.exhibition-carousel-list:hover .carousel-list-more:after {
     transition: all 0.2s;
     right: -10px;
 }
+
+.exhibition-carousel_list {
+    position: relative;
+    left: 1366px;
+}
+
+.exhibition-carousel .exhibition-carousel-list_go {
+    transition: all 1s;
+    left: -1366px;
+}
+
+.exhibition-carousel .exhibition-carousel-list_active {
+    transition: all 1s;
+    left: 0px;
+}
+
 /* 左右按钮 */
 .exhibition-carousel-left {
     position: absolute;
@@ -971,7 +985,7 @@
 /* 轮播内容 */
 .exhibition-carousel-text {
     position: absolute;
-    top: 0px;
+    top: 56px;
     left: 0px;
     background-color: #dce6ee;
     width: 600px;
@@ -1015,19 +1029,20 @@
     position: absolute;
     top: 0px;
     left: 586px;
-    margin-top: -55px;
+    /* margin-top: -55px; */
     border-radius: 5px;
 }
 
 .exhibition-carousel>ul {
     position: absolute;
+    top: 560px;
     display: block;
     width: 100%;
     height: 30px;
     text-align: center;
 }
 
-.exhibition-carousel li {
+.exhibition-carousel-list-dots {
     position: relative;
     display: inline-block;
     width: 14px;
@@ -1039,7 +1054,7 @@
     margin-right: 8px;
 }
 
-.exhibition-carousel li:nth-child(1) {
+.exhibition-carousel-list-dots-active {
     background-color: #404040;
 }
 /* 成功故事 */
