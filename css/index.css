@@ -107,7 +107,7 @@
     height: 12px;
     background-image: url(../images/denglu.png);
 }
-/* 展开 */
+/* 顶部导航展开 */
 .topnav-jituan-open {
     position: relative;
     z-index: 45;
