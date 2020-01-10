@@ -20,3 +20,235 @@
     padding: 0 11px;
     margin: 0 auto;
 }
+
+/* 字体图标 */
+@font-face {
+    font-family: 'corpfont';
+    src:  url('../fonts/corpfont.eot?utuc4q');
+    src:  url('../fonts/corpfont.eot?utuc4q#iefix') format('embedded-opentype'),
+      url('../fonts/corpfont.ttf?utuc4q') format('truetype'),
+      url('../fonts/corpfont.woff?utuc4q') format('woff'),
+      url('../fonts/corpfont.svg?utuc4q#corpfont') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  [class^="hwic_"], [class*=" hwic_"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'corpfont' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  .hwic_smart-screen:before {
+    content: "\e936";
+  }
+  .hwic_emui:before {
+    content: "\e937";
+  }
+  .hwic_smarthome-navbar:before {
+    content: "\e92e";
+  }
+  .hwic_Wearables-navbar:before {
+    content: "\e92f";
+  }
+  .hwic_tablets-navbar:before {
+    content: "\e930";
+  }
+  .hwic_solutions-nav:before {
+    content: "\e931";
+  }
+  .hwic_pc-navbar:before {
+    content: "\e932";
+  }
+  .hwic_mobile-navbar:before {
+    content: "\e933";
+  }
+  .hwic_accessories-navbar:before {
+    content: "\e934";
+  }
+  .hwic_mobile-nav:before {
+    content: "\e935";
+  }
+  .hwic_icon_nav_phones:before {
+    content: "\e92c";
+  }
+  .hwic_icon_nav_pc:before {
+    content: "\e92d";
+  }
+  .hwic_icon_rss:before {
+    content: "\e92b";
+  }
+  .hwic_icon_link:before {
+    content: "\e92a";
+  }
+  .hwic_icon_camera:before {
+    content: "\e929";
+  }
+  .hwic_toutiao:before {
+    content: "\e927";
+  }
+  .hwic_zhihu:before {
+    content: "\e928";
+  }
+  .hwic_icon_pic:before {
+    content: "\e926";
+  }
+  .hwic_icon_VK1:before {
+    content: "\e919";
+  }
+  .hwic_icon_habrahabr:before {
+    content: "\e924";
+  }
+  .hwic_icon_instagram:before {
+    content: "\e925";
+  }
+  .hwic_icon_print2:before {
+    content: "\e922";
+  }
+  .hwic_icon_print3:before {
+    content: "\e923";
+  }
+  .hwic_icon_print:before {
+    content: "\e91c";
+  }
+  .hwic_icon_building:before {
+    content: "\e91d";
+  }
+  .hwic_icon_time:before {
+    content: "\e91f";
+  }
+  .hwic_icon_user:before {
+    content: "\e920";
+  }
+  .hwic_open-in-new3:before {
+    content: "\e921";
+  }
+  .hwic_open-in-new-3:before {
+    content: "\e900";
+  }
+  .hwic_open-in-new-2:before {
+    content: "\e90e";
+  }
+  .hwic_download:before {
+    content: "\e913";
+  }
+  .hwic_download2:before {
+    content: "\e918";
+  }
+  .hwic_remove:before {
+    content: "\e15b";
+  }
+  .hwic_to_left:before {
+    content: "\e901";
+  }
+  .hwic_to_right:before {
+    content: "\e902";
+  }
+  .hwic_lamp:before {
+    content: "\e903";
+  }
+  .hwic_down:before {
+    content: "\e904";
+  }
+  .hwic_lock:before {
+    content: "\e905";
+  }
+  .hwic_sharing_email:before {
+    content: "\e906";
+  }
+  .hwic_add:before {
+    content: "\e907";
+  }
+  .hwic_sharing_print:before {
+    content: "\e908";
+  }
+  .hwic_sharing_share:before {
+    content: "\e909";
+  }
+  .hwic_browser:before {
+    content: "\e90a";
+  }
+  .hwic_sharing_wechat:before {
+    content: "\e90b";
+  }
+  .hwic_cross:before {
+    content: "\e90c";
+  }
+  .hwic_dehaze:before {
+    content: "\e90d";
+  }
+  .hwic_email:before {
+    content: "\e90f";
+  }
+  .hwic_files:before {
+    content: "\e910";
+  }
+  .hwic_top:before {
+    content: "\e911";
+  }
+  .hwic_pdf:before {
+    content: "\e914";
+  }
+  .hwic_left:before {
+    content: "\e915";
+  }
+  .hwic_right:before {
+    content: "\e916";
+  }
+  .hwic_search:before {
+    content: "\e917";
+  }
+  .hwic_telphone:before {
+    content: "\e91a";
+  }
+  .hwic_tick:before {
+    content: "\e91b";
+  }
+  .hwic_zoom-out:before {
+    content: "\e91e";
+  }
+  .hwic_play2:before {
+    content: "\ea1c";
+  }
+  .hwic_google-plus:before {
+    content: "\ea8b";
+  }
+  .hwic_facebook:before {
+    content: "\ea91";
+  }
+  .hwic_twitter:before {
+    content: "\ea96";
+  }
+  .hwic_sina-weibo:before {
+    content: "\ea9a";
+  }
+  .hwic_youtube:before {
+    content: "\ea9d";
+  }
+  .hwic_linkedin:before {
+    content: "\eaca";
+  }
+  .hwic_caret_left:before {
+    content: "\f0d9";
+  }
+  .hwic_caret_right:before {
+    content: "\f0da";
+  }
+  .hwic_sort_desc:before {
+    content: "\f0dd";
+  }
+  .hwic_sort_asc:before {
+    content: "\f0de";
+  }
+  .hwic_to-right:before {
+    content: "\e912";
+  }
+  

@@ -1,0 +1,106 @@
+.box {
+  width: 100%;
+  margin-top: 92px;
+  background-color: #fff;
+}
+.stores-home {
+  width: 100%;
+  height: 700px;
+  background-image: url(../upload/stores-bg.jpg);
+  background-size: cover;
+}
+.stores-home .stores-banner-cnt {
+  padding-top: 172px;
+  width: 828px;
+  margin: 0 auto;
+}
+.stores-home .stores-banner-title {
+  font-size: 64px;
+  font-weight: 600;
+  color: #ffffff;
+  line-height: 85px;
+  text-align: center;
+  text-shadow: 0 3px 6px #000000;
+}
+.stores-home .stores-search-wrap {
+  margin-top: 66px;
+  text-align: center;
+  position: relative;
+}
+.stores-home .stores-search-wrap .stores-search {
+  background-color: #ffffff;
+  border-radius: 36px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.32);
+  width: calc(100% - 100px);
+  height: 74px;
+  overflow: hidden;
+  border: 0;
+  padding: 0 62px 0 38px;
+  font-size: 20px;
+  font-weight: 300;
+  color: #000000;
+}
+.stores-home .stores-search-wrap .stores-jump {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 25px;
+  right: 28px;
+  font-size: 24px;
+  color: #8e8e8e;
+}
+.stores-content {
+  background: #000000;
+  padding: 124px 0;
+  width: 100%;
+  margin: 15px auto 0;
+}
+.stores-content ul {
+  max-width: 1380px;
+  margin: 0 auto;
+}
+.stores-content li {
+  float: left;
+  width: calc(50% - 30px);
+  padding: 0 10px 0 20px;
+}
+.stores-content li:nth-child(1) .stores-home-list {
+  background-image: url(../upload/stores_1.jpg);
+}
+.stores-content li:nth-child(1) .stores-home-list:hover {
+  background-image: url(../upload/stores_1_h.jpg);
+}
+.stores-content li:nth-child(2) .stores-home-list {
+  background-image: url(../upload/stores_2.jpg);
+}
+.stores-content li:nth-child(2) .stores-home-list:hover {
+  background-image: url(../upload/stores_2_h.jpg);
+}
+.stores-content .stores-home-list {
+  display: block;
+  width: 100%;
+  height: 460px;
+  border-radius: 24px;
+  position: relative;
+  transition: all 1s;
+  background-size: cover;
+}
+.stores-content .a-common {
+  display: block;
+  width: 0%;
+  height: 100%;
+}
+.stores-content .a-common div {
+  width: 90%;
+  font-size: 64px;
+  font-weight: 600;
+  text-shadow: 0 3px 6px #000000;
+  color: #ffffff;
+  line-height: 85px;
+  position: absolute;
+  top: -54px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}

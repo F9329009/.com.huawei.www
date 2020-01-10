@@ -19,15 +19,12 @@
     padding-right: 18px;
 }
 
-.topnav-left a:after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    right: 0px;
-    margin-top: -2.5px;
-    display: block;
-    width: 8px;
-    height: 5px;
+.topnav-left i {
+    font-size: 24px;
+    vertical-align: middle;
+    display: inline-block;
+    overflow: hidden;
+    height: 23px;
 }
 
 .topnav-left-jituan-up:after {
@@ -56,12 +53,16 @@
     font-weight: 700;
 }
 
-.topnav-right a:hover {
-    text-decoration: underline;
+.topnav-right i {
+    font-size: 24px;
+    vertical-align: middle;
+    display: inline-block;
+    overflow: hidden;
+    height: 23px;
 }
 
 .topnav-region {
-    padding-right: 34px;
+    padding-right: 4px;
 }
 
 .topnav-region:before {
@@ -73,21 +74,6 @@
     width: 14px;
     height: 14px;
     background-image: url(../images/quyu.png);
-
-
-}
-
-.topnav-region:after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    right:14px;
-    margin-top: -2.5px;
-    width: 8px;
-    height: 5px;
-    background-image: url(../images/xiajiantou.png);
-
-
 }
 
 .topnav-login {
@@ -258,11 +244,19 @@
 }
 
 .searchnav-right {
+    display: inline-block;
+    font-size: 24px;
     float: right;
+    margin-top: 20px;
+    margin-right: 0;
+    position: relative;
+    line-height: 1.625;
 }
-.searchnav-right img {
+
+.searchnav-right i {
     float: left;
     width: 25px;
+    height: 25px;
     margin-top: 26px;
     margin-right: 8px;
 }
@@ -322,15 +316,13 @@
     line-height: 40px;
 }
 
-.searchnav-service-li_1-open-left-more a:after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    right: -36px;
-    margin-top: -4px;
-    width: 5px;
-    height: 9px;
-    background-image: url(../images/xiajiantou_right.png);
+.searchnav-service-li_1-open-left-more i {
+    font-size: 35px;
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 15px;
+    padding-right: 5px;
+    color: #fff;
 }
 
 .searchnav-service-li_1-open .searchnav-service-li_1-open-list {
@@ -355,13 +347,14 @@
     height: 88px;
 }
 
-.searchnav-service-li_1-open-list img {
-    height: 52px;
+.searchnav-service-li_1-open-list i {
+    font-size: 44px;
+    min-width: 52px;
 }
 
 .searchnav-service-li_1-open-list p {
     font-size: 18px;
-    margin-top: -30px;
+    margin-top: -20px;
 }
 
 .searchnav-service-li_1-open-list li:hover span {
@@ -1265,6 +1258,10 @@
 
 .footre-nav-social li {
     padding-bottom: 30px;
+}
+
+.footre-nav-social a {
+    font-size: 22px;
 }
 
 .footre-others-nav {
